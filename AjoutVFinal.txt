@@ -1,0 +1,19 @@
+Ajout pour cette version finale:
+-Un vrai menu
+-système de grille infinie
+-Ajout d'un touche (ECHAP) pour revenir au menu
+-Quelque ajout graphique et petites améliorations du codes
+-Modification des touches pour plus de cohérence
+
+Aurait du être dans le programme une fonction règle, qui aurait permit de changer de changer les règles du jeu, cependant cela apportait
+pas mal de problèmes, donc elle n'a pas été mise.
+(def règle(vivant_mort, case_adjacente):# fonction règle, ouvre la possibilité pour différent set de règle en modifiant la liste de règle
+    global liste_survie
+    global liste_creation
+
+    if vivant_mort == 1:
+        if liste_survie[case_adjacente-1]=='0' :
+            return('1')
+    if vivant_mort == '0':
+        if liste_creation[case_adjacente] == '1':
+            return('1'))
